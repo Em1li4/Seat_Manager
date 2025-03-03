@@ -1,0 +1,10 @@
+The application is structured with a clear separation of concerns:
+
+Seat Class: This model class represents a single seat, encapsulating its properties such as seat number, booking status, and booking date.
+SeatBooking Class: This controller class manages the collection of Seat objects using an ArrayList. It implements the core logic for:
+Create (Add Booking): Adding new seat bookings to the ArrayList.
+Read (Display Bookings): Retrieving and displaying the current booking status from the ArrayList.
+Update (Update Booking): Modifying existing seat bookings within the ArrayList.
+Delete (Cancel Booking): Removing or marking seat bookings as canceled within the ArrayList.
+Main Class: This class provides a user-friendly, menu-driven interface using a Scanner to interact with the SeatBooking controller. It handles user input, error handling, and orchestrates the application's flow.
+The project demonstrates how ArrayLists facilitate dynamic data management, allowing for the flexible addition, removal, and modification of seat bookings. It also emphasizes the importance of clear object-oriented design and basic error handling in building robust applications.
