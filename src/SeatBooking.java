@@ -56,12 +56,7 @@ public class SeatBooking {
     public void updateBooking(String oldSeatNumber, String newSeatNumber) {
         for (Seat seat : bookedSeatsList) {
             if (seat.getSeatNumber().equals(oldSeatNumber) && !seat.isCanceled()){
-                seat.setBooked(false);
-                bookedSeatsList.remove(seat);
-                Seat newSeat = new Seat(newSeatNumber);
-                newSeat.setSeatNumber(newSeatNumber);
-                newSeat.setBooked(true);
-                bookedSeatsList.add(newSeat);
+                seat.setSeatNumber(newSeatNumber);
                 System.out.println("Seat " + oldSeatNumber + " has been updated to " + newSeatNumber + "!");
                 return;
             }
